@@ -1,0 +1,11 @@
+.input {
+    @apply border rounded border-gray-400 text-sm text-black p-2 focus:outline-none ;
+}
+
+.is-danger{
+    @apply border rounded border-red-400 text-sm text-black p-2 focus:outline-none ;
+}
+
+.is-success{
+    @apply border rounded border-blue-500 text-sm text-black p-2 focus:outline-none ;
+}

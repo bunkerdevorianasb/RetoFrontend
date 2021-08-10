@@ -1,0 +1,31 @@
+<div class="flex flex-col m-4">
+    <div>
+        <h1 class="text-xl text-gray-400 p-5">Más Importantes: </h1>
+        <div>
+            <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3" dragula="DRAGULA_FACTS" >
+                <div *ngFor="let tool of favoriteTool">
+                    <app-tool [tool]="tool" ></app-tool>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1 class="text-xl text-gray-400 p-5">Otras Herramientas: </h1>
+        <div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-3"  dragula="DRAGULA_FACTS">
+                <div  *ngFor="let tool of tools" >
+                    <app-tool [tool]="tool" ></app-tool>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="bg-blue-600 rounded-full h-12 w-12 fixed bottom-6 right-6" (click)="openDialog()" >
+        <i class="fas fa-plus fas-3x text-white"></i>
+    </button> 
+
+</div>
+
+
+
+
+
